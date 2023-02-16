@@ -1,6 +1,11 @@
 #include <indicators/cursor_control.hpp>
 #include <indicators/progress_spinner.hpp>
 
+
+#if defined(BUILD_MONOLITHIC)
+#define main   indicators_progress_spinner_main
+#endif
+
 int main() {
 
   // Hide cursor

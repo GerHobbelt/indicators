@@ -2,6 +2,11 @@
 #include <indicators/progress_bar.hpp>
 #include <thread>
 
+
+#if defined(BUILD_MONOLITHIC)
+#define main   indicators_progress_bar_tick_main
+#endif
+
 int main() {
   indicators::ProgressBar bar{indicators::option::BarWidth{50},
                               indicators::option::Start{"["},

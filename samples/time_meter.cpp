@@ -3,6 +3,11 @@
 #include <indicators/progress_bar.hpp>
 #include <thread>
 
+
+#if defined(BUILD_MONOLITHIC)
+#define main   indicators_progress_meter_main
+#endif
+
 int main() {
   // Hide cursor
   indicators::show_console_cursor(false);

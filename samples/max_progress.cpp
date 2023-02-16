@@ -3,6 +3,11 @@
 #include <indicators/cursor_control.hpp>
 #include <thread>
 
+
+#if defined(BUILD_MONOLITHIC)
+#define main   indicators_max_progress_main
+#endif
+
 int main() {
 
   // Hide cursor

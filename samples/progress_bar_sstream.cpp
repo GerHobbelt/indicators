@@ -3,6 +3,11 @@
 #include <sstream>
 #include <thread>
 
+
+#if defined(BUILD_MONOLITHIC)
+#define main   indicators_progress_bar_stream_main
+#endif
+
 int main() {
   using namespace indicators;
 

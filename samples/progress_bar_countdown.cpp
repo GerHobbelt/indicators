@@ -3,6 +3,11 @@
 #include <thread>
 using namespace indicators;
 
+
+#if defined(BUILD_MONOLITHIC)
+#define main   indicators_progress_bar_countdown_main
+#endif
+
 int main() {
 
   ProgressBar bar{option::BarWidth{50},

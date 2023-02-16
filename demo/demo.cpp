@@ -3,6 +3,11 @@
 #include <indicators/progress_spinner.hpp>
 #include <vector>
 
+
+#if defined(BUILD_MONOLITHIC)
+#define main   indicators_demo_main
+#endif
+
 int main() {
   using namespace indicators;
 

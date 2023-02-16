@@ -2,6 +2,11 @@
 #include <indicators/progress_bar.hpp>
 using namespace indicators;
 
+
+#if defined(BUILD_MONOLITHIC)
+#define main   indicators_dynamic_progress_main
+#endif
+
 int main() {
 
   ProgressBar bar1{option::BarWidth{50},

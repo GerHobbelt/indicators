@@ -3,6 +3,11 @@
 #include <indicators/terminal_size.hpp>
 using namespace indicators;
 
+
+#if defined(BUILD_MONOLITHIC)
+#define main   indicators_dynamic_postfix_text_main
+#endif
+
 int main() {
 
     std::cout << "Terminal width: " << terminal_size().second << "\n";

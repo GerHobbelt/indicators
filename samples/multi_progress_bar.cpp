@@ -1,6 +1,11 @@
 #include <indicators/multi_progress.hpp>
 #include <indicators/progress_bar.hpp>
 
+
+#if defined(BUILD_MONOLITHIC)
+#define main   indicators_multi_progress_bar_main
+#endif
+
 int main() {
 
   indicators::ProgressBar bar1{indicators::option::BarWidth{50},

@@ -3,6 +3,11 @@
 #include <indicators/indeterminate_progress_bar.hpp>
 #include <thread>
 
+
+#if defined(BUILD_MONOLITHIC)
+#define main   indicators_indeterminate_progress_bar_main
+#endif
+
 int main() {
   indicators::IndeterminateProgressBar bar{
       indicators::option::BarWidth{40},
