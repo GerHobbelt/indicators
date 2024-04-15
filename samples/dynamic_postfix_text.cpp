@@ -48,4 +48,5 @@ int main() {
     p2.set_option(option::PostfixText{"abcd"});
     mp.set_progress<0>(size_t(0));
 
+		return 0;
 }
