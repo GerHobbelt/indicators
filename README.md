@@ -69,7 +69,7 @@ You can update the progress bar using `bar.tick()` which increments progress by 
 #include <thread>
 #include <chrono>
 
-int main() {
+int main(void) {
   using namespace indicators;
   ProgressBar bar{
     option::BarWidth{50},
@@ -112,7 +112,7 @@ If you'd rather control progress of the bar in discrete steps, consider using `b
 #include <indicators/progress_bar.hpp>
 #include <thread>
 
-int main() {
+int main(void) {
   using namespace indicators;
 
   // Hide cursor
@@ -175,7 +175,7 @@ All progress bars and spinners in `indicators` support showing time elapsed and 
 #include <indicators/progress_bar.hpp>
 #include <thread>
 
-int main() {
+int main(void) {
   using namespace indicators;
 
   // Hide cursor
@@ -229,7 +229,7 @@ When you know progress is complete, simply call `bar.mark_as_completed()`.
 #include <indicators/termcolor.hpp>
 #include <thread>
 
-int main() {
+int main(void) {
   indicators::IndeterminateProgressBar bar{
       indicators::option::BarWidth{40},
       indicators::option::Start{"["},
@@ -279,7 +279,7 @@ Are you in need of a smooth block progress bar using [unicode block elements](ht
 #include <thread>
 #include <chrono>
 
-int main() {
+int main(void) {
 
   using namespace indicators;
 
@@ -329,7 +329,7 @@ Below is an example `MultiProgress` object that manages three `ProgressBar` obje
 #include <indicators/multi_progress.hpp>
 #include <indicators/progress_bar.hpp>
 
-int main() {
+int main(void) {
   using namespace indicators;
   // Configure first progress bar
   ProgressBar bar1{
@@ -440,7 +440,7 @@ Below is an example `DynamicProgress` object that manages six `ProgressBar` obje
 #include <indicators/progress_bar.hpp>
 using namespace indicators;
 
-int main() {
+int main(void) {
 
   ProgressBar bar1{option::BarWidth{50}, option::ForegroundColor{Color::red},
                    option::ShowElapsedTime{true}, option::ShowRemainingTime{true},
@@ -595,7 +595,7 @@ ProgressSpinner has a vector of strings: `spinner_states`. At each update, the s
 ```cpp
 #include <indicators/progress_spinner.hpp>
 
-int main() {
+int main(void) {
   using namespace indicators;
   indicators::ProgressSpinner spinner{
     option::PostfixText{"Checking credentials"},
@@ -641,7 +641,7 @@ int main() {
 #include <thread>
 using namespace indicators;
 
-int main() {
+int main(void) {
 
   ProgressBar bar{option::BarWidth{50},
                   option::ProgressType{ProgressType::decremental},
@@ -684,7 +684,7 @@ can be achieved by using the `option::MaxProgress`:
 #include <indicators/cursor_control.hpp>
 #include <thread>
 
-int main() {
+int main(void) {
 
   // Hide cursor
   indicators::show_console_cursor(false);
@@ -750,7 +750,7 @@ See below an example of some progress bars, each with a bar width of 50, display
 #include <indicators/cursor_control.hpp>
 #include <thread>
 
-int main() {
+int main(void) {
 
     indicators::show_console_cursor(false);
 

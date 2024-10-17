@@ -7,7 +7,7 @@
 #define main   indicators_progress_bar_tick_main
 #endif
 
-int main() {
+int main(void) {
   indicators::ProgressBar bar{indicators::option::BarWidth{50},
                               indicators::option::Start{"["},
                               indicators::option::Fill{"="},

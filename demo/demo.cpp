@@ -8,7 +8,7 @@
 #define main   indicators_demo_main
 #endif
 
-int main() {
+int main(void) {
   using namespace indicators;
 
   // Hide cursor

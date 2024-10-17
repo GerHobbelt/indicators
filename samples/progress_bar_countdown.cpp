@@ -8,7 +8,7 @@ using namespace indicators;
 #define main   indicators_progress_bar_countdown_main
 #endif
 
-int main() {
+int main(void) {
 
   ProgressBar bar{option::BarWidth{50},
                   option::ProgressType{ProgressType::decremental},

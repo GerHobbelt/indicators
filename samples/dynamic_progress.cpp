@@ -7,7 +7,7 @@ using namespace indicators;
 #define main   indicators_dynamic_progress_main
 #endif
 
-int main() {
+int main(void) {
 
   ProgressBar bar1{option::BarWidth{50},
                    option::ForegroundColor{Color::red},

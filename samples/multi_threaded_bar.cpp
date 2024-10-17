@@ -6,7 +6,7 @@
 #define main   indicators_multi_threaded_bar_main
 #endif
 
-int main() {
+int main(void) {
 
   indicators::ProgressBar bar{indicators::option::BarWidth{50},
                               indicators::option::Start{"["},

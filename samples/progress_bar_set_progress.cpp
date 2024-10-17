@@ -8,7 +8,7 @@
 #define main   indicators_progress_bar_set_progress_main
 #endif
 
-int main() {
+int main(void) {
 
   // Hide cursor
   indicators::show_console_cursor(false);

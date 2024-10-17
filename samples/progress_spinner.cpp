@@ -6,7 +6,7 @@
 #define main   indicators_progress_spinner_main
 #endif
 
-int main() {
+int main(void) {
 
   // Hide cursor
   indicators::show_console_cursor(false);

@@ -8,7 +8,7 @@
 #define main   indicators_indeterminate_progress_bar_main
 #endif
 
-int main() {
+int main(void) {
   indicators::IndeterminateProgressBar bar{
       indicators::option::BarWidth{40},
       indicators::option::Start{"["},

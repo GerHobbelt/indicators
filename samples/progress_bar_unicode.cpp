@@ -9,7 +9,7 @@
 #define main   indicators_progress_bar_unicode_main
 #endif
 
-int main() {
+int main(void) {
 
   indicators::show_console_cursor(false);
 

@@ -6,7 +6,7 @@
 #define main   indicators_multi_progress_bar_main
 #endif
 
-int main() {
+int main(void) {
 
   indicators::ProgressBar bar1{indicators::option::BarWidth{50},
                                indicators::option::Start{"["},

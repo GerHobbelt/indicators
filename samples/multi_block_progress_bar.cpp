@@ -6,7 +6,7 @@
 #define main   indicators_multi_block_progress_bar_main
 #endif
 
-int main() {
+int main(void) {
   using namespace indicators;
   BlockProgressBar bar1{option::BarWidth{50},
                         option::ForegroundColor{Color::yellow},

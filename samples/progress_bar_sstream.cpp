@@ -8,7 +8,7 @@
 #define main   indicators_progress_bar_stream_main
 #endif
 
-int main() {
+int main(void) {
   using namespace indicators;
 
   std::stringstream os;

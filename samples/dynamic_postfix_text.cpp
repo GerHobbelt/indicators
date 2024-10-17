@@ -8,7 +8,7 @@ using namespace indicators;
 #define main   indicators_dynamic_postfix_text_main
 #endif
 
-int main() {
+int main(void) {
 
     std::cout << "Terminal width: " << terminal_size().second << "\n";
 
