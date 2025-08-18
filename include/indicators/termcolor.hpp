@@ -836,7 +836,7 @@ namespace termcolor
         #if defined(TERMCOLOR_TARGET_POSIX)
             return ::isatty(fileno(std_stream));
         #elif defined(TERMCOLOR_TARGET_WINDOWS)
-            return ::_isatty(_fileno(std_stream));
+            return bool(::_isatty(_fileno(std_stream)));
         #else
             return false;
         #endif
