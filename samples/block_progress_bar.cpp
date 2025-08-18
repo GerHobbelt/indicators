@@ -19,10 +19,10 @@ int main(void) {
           std::vector<indicators::FontStyle>{indicators::FontStyle::bold}}};
 
   // Update bar state
-  auto progress = 0.0f;
+  size_t progress = 0;
   while (true) {
     bar.set_progress(progress);
-    progress += 0.25f;
+    progress++;
     if (bar.is_completed())
       break;
     std::this_thread::sleep_for(std::chrono::milliseconds(50));
